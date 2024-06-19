@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">PokeUJI</string>
+    <string name="unknownPokemonHeight">\???cm</string>
+    <string name="unknownPokemonWeight">\???Kg</string>
+    <string name="unknownPokemonName">\??????</string>
+    <string name="unknownSpecies">\?????</string>
+    <string name="speciesNameDisplayDefault">Pikachu</string>
+    <string name="speciesTitleDefault">(Species)</string>
+    <string name="descriptionTitleDefault">Description:</string>
+    <string name="versionTitleDefault">Version:</string>
+    <string name="varietiesTitleDefault">Varieties:</string>
+    <string name="evolutionButtonTextDefault">Evolution</string>
+    <string name="searchEditTextHint">Name or Number</string>
+    <string name="searchButtonTextDefault">Search</string>
+    <string name="heightTitleDefault">Height:</string>
+    <string name="speciesTitleDefaultMain">Species:</string>
+    <string name="weightTitleDefault">Weight:</string>
+    <string name="typesButtonTextDefault">Show Types</string>
+    <string name="abilitiesButtonTextDefault">Show Abilities</string>
+    <string name="evolutionTitleDisplayDefault">Evolution</string>
+</resources>

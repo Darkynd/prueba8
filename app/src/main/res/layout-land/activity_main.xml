@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pokemonActivity.PokemonActivity">
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:ems="18"
+        android:hint="@string/searchEditTextHint"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="@string/searchButtonTextDefault"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/searchEditText"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/pokemonNameDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/unknownPokemonName"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="@+id/pokemonImage"
+        app:layout_constraintStart_toStartOf="@+id/pokemonImage"
+        app:layout_constraintTop_toBottomOf="@+id/searchEditText" />
+
+    <ImageView
+        android:id="@+id/pokemonImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="68dp"
+        android:src="?android:attr/alertDialogIcon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pokemonNameDisplay"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/pokemonHeightDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/unknownPokemonHeight"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/weightTitle"
+        app:layout_constraintStart_toStartOf="@+id/weightTitle"
+        app:layout_constraintTop_toBottomOf="@+id/heightTitle" />
+
+    <TextView
+        android:id="@+id/pokemonWeightDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/unknownPokemonWeight"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/speciesTitle"
+        app:layout_constraintStart_toStartOf="@+id/speciesTitle"
+        app:layout_constraintTop_toBottomOf="@+id/weightTitle" />
+
+    <TextView
+        android:id="@+id/heightTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/heightTitleDefault"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/pokemonHeightDisplay"
+        app:layout_constraintStart_toStartOf="@+id/pokemonHeightDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/searchEditText" />
+
+    <TextView
+        android:id="@+id/pokemonSpeciesDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/unknownSpecies"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/abilitiesButton"
+        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintStart_toEndOf="@+id/pokemonImage"
+        app:layout_constraintTop_toBottomOf="@+id/speciesTitle" />
+
+    <TextView
+        android:id="@+id/speciesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/speciesTitleDefaultMain"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/pokemonSpeciesDisplay"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="@+id/pokemonSpeciesDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/pokemonWeightDisplay" />
+
+    <TextView
+        android:id="@+id/weightTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/weightTitleDefault"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/pokemonWeightDisplay"
+        app:layout_constraintStart_toStartOf="@+id/pokemonWeightDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/pokemonHeightDisplay" />
+
+    <Button
+        android:id="@+id/typesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="68dp"
+        android:text="@string/typesButtonTextDefault"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/abilitiesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/abilitiesButtonTextDefault"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/typesButton"
+        app:layout_constraintEnd_toEndOf="@+id/typesButton"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/typesButton" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginBottom="8dp">
+
+    <ImageView
+        android:id="@+id/iconArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_right_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/varietyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:drawablePadding="8dp"
+        app:layout_constraintStart_toEndOf="@id/iconArrow"
+        app:layout_constraintEnd_toStartOf="@id/catchingPokemonIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        tools:text="Variety" />
+
+    <ImageView
+        android:id="@+id/catchingPokemonIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/baseline_catching_pokemon_24"
+        app:layout_constraintBottom_toBottomOf="@id/varietyName"
+        app:layout_constraintStart_toEndOf="@id/varietyName"
+        app:layout_constraintTop_toTopOf="@id/varietyName"
+        tools:ignore="ContentDescription">
+    </ImageView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Sets the style attribute to the value alertDialogIcon -->
+    <attr name="customAlertDialogIcon" format="reference" />
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PokeUJI" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    <!-- Applies the alertDialog Icon as a style resource -->
+    <style name="Theme.PokeUJI" parent="Base.Theme.PokeUJI">
+        <item name="customAlertDialogIcon">?android:attr/alertDialogIcon</item></style>
+
+</resources>
